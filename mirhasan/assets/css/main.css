@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .nav-content {
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav-content img {
+  cursor: pointer;
+}
+header .nav-content img:hover {
+  color: inherit;
+}
+header .nav-content .nav-contentBox {
+  display: flex;
+  align-items: center;
+}
+header .nav-content .nav-contentBox .list-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+header .nav-content .nav-contentBox .list-content li {
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 15px;
+}
+header .nav-content .nav-contentBox .list-content li:hover {
+  color: cornflowerblue;
+}
+header .nav-content .fa-icon {
+  padding: 0 10px;
+  font-size: 25px;
+}
+header .nav-content .fa-icon:hover {
+  color: cornflowerblue;
+  cursor: pointer;
+}
+header .nav-content .fa-bars {
+  display: none;
+}
+
+@media screen and (max-width: 320px) {
+  header .nav-content img {
+    max-width: 60px;
+    width: 100%;
+  }
+  header .nav-content .nav-contentBox {
+    display: none !important;
+  }
+  header .nav-content .nav-contentBox .list-content {
+    overflow: hidden;
+    display: none !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-content {
+    display: flex;
+    justify-content: space-between !important;
+  }
+  .nav-content img {
+    max-width: 60px;
+    width: 100%;
+  }
+  .nav-content .nav-contentBox .list-content {
+    overflow: hidden;
+    display: none !important;
+  }
+  .nav-content .icon {
+    display: none;
+  }
+  .nav-content .fa-icon {
+    font-size: 15px !important;
+  }
+  .nav-content .fa-bars {
+    display: block !important;
+  }
+}
+main section .allCard-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section .allCard-box .banner {
+  border: 1px solid;
+}
+main section .allCard-box .banner a {
+  text-decoration: none !important;
+}
+main section .allCard-box .banner a .banner-text {
+  display: flex;
+  flex-direction: column;
+}
+main section .allCard-box .banner a .banner-text span {
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 2;
+  display: inline-block;
+}
+main section .allCard-box img {
+  max-width: 350px;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+main section .product-content {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+main section .product-content .text-product {
+  display: flex;
+  gap: 15px;
+}
+main section .product-content .all-product-box {
+  display: flex;
+  justify-content: space-between;
+}
+main section .product-content .all-product-box .product-text-box {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+main section .product-content .all-product-box .filter-box button {
+  padding: 10px 50px;
+  border: 0;
+  color: inherit;
+}
+main section .product-content .all-product-box .filter-box button:hover {
+  background-color: cornflowerblue;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 320px) {
+  main section .allCard-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  main section .allCard-box img {
+    width: 100px;
+    max-height: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main section .allCard-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  main section .allCard-box img {
+    width: 200px;
+    max-height: 200px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main section .product-content .text-product {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.Mycontainer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 50px;
+}/*# sourceMappingURL=main.css.map */
